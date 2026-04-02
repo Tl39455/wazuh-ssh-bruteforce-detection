@@ -34,7 +34,7 @@ The brute force attack was intitated using the command:
 
 hydra -l root -P /usr/share/wordlists/rockyou.txt ssh://192.168.56.102:
 
-![image alt](https://github.com/Tl39455/wazuh-ssh-bruteforce-detection/blob/c3a802b4674cad6bf3c6d014fce42fdacd3a1352/Ping%20Agent%20IP.png)
+![image alt](https://github.com/Tl39455/wazuh-ssh-bruteforce-detection/blob/c36b22789bb0eabfb61b02816e408b054edadbe4/Hydra%20Attack.png)
 ![image alt](https://github.com/Tl39455/wazuh-ssh-bruteforce-detection/blob/c3a802b4674cad6bf3c6d014fce42fdacd3a1352/Ping%20Agent%20IP.png)
 
 The agent VM was logged in real-time using this command: 
