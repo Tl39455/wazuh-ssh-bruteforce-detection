@@ -18,6 +18,9 @@ Simulate an SSH brute-force attack using Kali Linux and detect authentication fa
 ## Attack Simulation
 The attack was executed from Kali Linux using Hydra against the SSH service on the Ubuntu agent.
 
+First a ping to the IP address being attacked to confirm there is a connection:
+
+
 Command used:
 hydra -l root -P /usr/share/wordlists/rockyou.txt ssh://192.168.56.102
 
