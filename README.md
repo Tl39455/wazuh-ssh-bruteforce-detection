@@ -1,7 +1,7 @@
 # Wazuh SSH Brute-Force Detection
 
 ## Objective
-Simulate an SSH brute-force attack using Kali Linux and detect authentication failures using Wazuh SIEM.
+Simulate an SSH brute-force attack using Kali Linux in my home lab enviroment and detect authentication failures using Wazuh SIEM.
 
 ## Lab Environment
 - Attacker: Kali Linux
