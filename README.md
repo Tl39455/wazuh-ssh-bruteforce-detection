@@ -23,10 +23,13 @@ First a ping to the IP address being attacked to confirm there is a connection u
 If rockyou.txt.gz is still compressed, extract it with:
 
 sudo gzip -d /usr/share/wordlists/rockyou.txt.gz
+
 If you get No such file or directory, verify whether the wordlist is already extracted:
 
 ls /usr/share/wordlists
+
 If rockyou.txt is present, proceed with Hydra using that file.
+
 The brute force attack was intitated using the command:
 
 hydra -l root -P /usr/share/wordlists/rockyou.txt ssh://192.168.56.102:
@@ -36,7 +39,7 @@ hydra -l root -P /usr/share/wordlists/rockyou.txt ssh://192.168.56.102:
 
 The agent VM was logged in real-time using this command: 
 
-![image alt](https://github.com/Tl39455/wazuh-ssh-bruteforce-detection/blob/c3a802b4674cad6bf3c6d014fce42fdacd3a1352/Ping%20Agent%20IP.png)
+![image alt](https://github.com/Tl39455/wazuh-ssh-bruteforce-detection/blob/96452a1bf44faf5f93cfa13f246a34c62004e756/Agent%20real-time%20logs%20of%20attack.png)
 
 The attack was monitored from the Wazuh VM dashboard in real-time:
 
