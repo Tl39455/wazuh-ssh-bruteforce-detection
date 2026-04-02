@@ -19,19 +19,28 @@ Simulate an SSH brute-force attack using Kali Linux and detect authentication fa
 The attack was executed from Kali Linux using Hydra against the SSH service on the Ubuntu agent.
 
 First a ping to the IP address being attacked to confirm there is a connection using "ping 192.168.56.102".
-If rockyou.txt.gz is still compressed, extract it with: sudo gzip -d /usr/share/wordlists/rockyou.txt.gz
-If you get No such file or directory, verify whether the wordlist is already extracted: ls /usr/share/wordlists
+
+If rockyou.txt.gz is still compressed, extract it with:
+
+sudo gzip -d /usr/share/wordlists/rockyou.txt.gz
+If you get No such file or directory, verify whether the wordlist is already extracted:
+
+ls /usr/share/wordlists
 If rockyou.txt is present, proceed with Hydra using that file.
-The brute force attack was intitated using the command: hydra -l root -P /usr/share/wordlists/rockyou.txt ssh://192.168.56.102:
+The brute force attack was intitated using the command:
+
+hydra -l root -P /usr/share/wordlists/rockyou.txt ssh://192.168.56.102:
 
 ![image alt](https://github.com/Tl39455/wazuh-ssh-bruteforce-detection/blob/c3a802b4674cad6bf3c6d014fce42fdacd3a1352/Ping%20Agent%20IP.png)
-
+![image alt](https://github.com/Tl39455/wazuh-ssh-bruteforce-detection/blob/c3a802b4674cad6bf3c6d014fce42fdacd3a1352/Ping%20Agent%20IP.png)
 
 The agent VM was logged in real-time using this command: 
 
 ![image alt](https://github.com/Tl39455/wazuh-ssh-bruteforce-detection/blob/c3a802b4674cad6bf3c6d014fce42fdacd3a1352/Ping%20Agent%20IP.png)
 
-The 
+The attack was monitored from the Wazuh VM dashboard in real-time:
+
+![image alt](https://github.com/Tl39455/wazuh-ssh-bruteforce-detection/blob/c3a802b4674cad6bf3c6d014fce42fdacd3a1352/Ping%20Agent%20IP.png)
 
 ## Detection Results
 Wazuh detected:
