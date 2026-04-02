@@ -39,7 +39,7 @@ hydra -l root -P /usr/share/wordlists/rockyou.txt ssh://192.168.56.102:
 
 The agent VM was logged in real-time using this command: 
 
-![image alt](https://github.com/Tl39455/wazuh-ssh-bruteforce-detection/blob/96452a1bf44faf5f93cfa13f246a34c62004e756/Agent%20real-time%20logs%20of%20attack.png)
+![image alt](https://github.com/Tl39455/wazuh-ssh-bruteforce-detection/blob/43f5fe4a5fe13f78403d154d6c8d33db4513fde5/Agent%20real-time%20logs%20of%20attack.png)
 
 The attack was monitored from the Wazuh VM dashboard in real-time:
 
