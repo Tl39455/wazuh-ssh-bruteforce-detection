@@ -43,7 +43,7 @@ The agent VM was logged in real-time using this command:
 
 The attack was monitored from the Wazuh VM dashboard in real-time:
 
-![image alt](https://github.com/Tl39455/wazuh-ssh-bruteforce-detection/blob/c3a802b4674cad6bf3c6d014fce42fdacd3a1352/Ping%20Agent%20IP.png)
+![image alt](https://github.com/Tl39455/wazuh-ssh-bruteforce-detection/blob/5e1c5acdab92b8f0c144ce35bda8966ec4e9304e/Security%20events%20of%20attack.png)
 
 ## Detection Results
 Wazuh detected:
