@@ -18,7 +18,7 @@ Simulate an SSH brute-force attack using Kali Linux in my home lab environment a
 ## Attack Simulation
 The attack was executed from Kali Linux using Hydra against the SSH service on the Ubuntu agent.
 
-First, a ping to the IP address being attacked to confirm there is a connection using "ping 192.168.56.102".
+First, a ping to the IP address being attacked was made to confirm there is a connection using "ping 192.168.56.102".
 
 If rockyou.txt.gz is still compressed, extract it with:
 
