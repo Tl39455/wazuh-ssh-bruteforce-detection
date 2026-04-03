@@ -1,7 +1,7 @@
 # Wazuh SSH Brute-Force Detection
 
 ## Objective
-Simulate an SSH brute-force attack using Kali Linux in my home lab enviroment and detect authentication failures using Wazuh SIEM.
+Simulate an SSH brute-force attack using Kali Linux in my home lab environment and detect authentication failures using Wazuh SIEM.
 
 ## Lab Environment
 - Attacker: Kali Linux
@@ -24,7 +24,7 @@ If rockyou.txt.gz is still compressed, extract it with:
 
 sudo gzip -d /usr/share/wordlists/rockyou.txt.gz
 
-If you get No such file or directory, verify whether the wordlist is already extracted:
+If you get no such file or directory, verify whether the wordlist is already extracted:
 
 ls /usr/share/wordlists
 
